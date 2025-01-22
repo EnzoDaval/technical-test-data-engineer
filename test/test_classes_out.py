@@ -33,3 +33,4 @@ def test_listen_history_out_generate_fake():
     assert history.items is None
     assert isinstance(history.created_at, datetime.datetime)
     assert isinstance(history.updated_at, datetime.datetime)
+    
