@@ -36,7 +36,7 @@ def sample_formatted_histories():
 def test_format_history(sample_histories, sample_tracks):
     formatted_history = format_history(sample_histories, sample_tracks)
 
-    assert len(formatted_history) == 6  # 5 éléments dans l'historique attendu
+    assert len(formatted_history) == 6  # 6 éléments dans l'historique attendu
 
     assert formatted_history[0]["user_id"] == 1
     assert formatted_history[0]["musique_id"] == 101
@@ -46,9 +46,6 @@ def test_format_history(sample_histories, sample_tracks):
 
     assert formatted_history[4]["user_id"] == 2
     assert formatted_history[4]["musique_id"] == 105
-
-    # Vérifier que la date de l'écoute est bien au format ISO
-#    assert datetime.fromisoformat(formatted_history[0]["dateEcoute"])
 
 #utils
 def reset_table(table_name):
